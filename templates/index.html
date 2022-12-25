@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style type="text/css">
+          .section-gradient{
+            background: #E9ECEF;
+          }
+          footer a{
+            color: #fff;
+          }
+          .hero-content {
+              display: flex;
+              align-items: center;
+            }
+            .jumbotron {
+                background: linear-gradient(to right, #00b4db, #0083b0, #00b4db);
+            }
+            .navbar-nav {
+              margin-left: auto;
+            }
+            .navbar-brand img {
+              margin-right: 30px;
+            }
+
+            .nav-link {
+              margin-left: 30px;
+            }
+            .section-gradient {
+              margin-top: -40px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- Header with image logo -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contents</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Hero with image and title -->
+        <section class="jumbotron jumbotron-fluid">
+          <div class="container hero-content">
+            <h1 class="display-4">My Hero</h1>
+            <img src="hero.png" alt="hero" class="img-fluid">
+          </div>
+        </section>
+        <!-- Section with title and description in center and gradient -->
+        <section class="section-gradient">
+          <br>
+          <br>
+          <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>My Section Title</h2>
+                        <p>Description of my section</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+          <br>
+          <br>
+        </section>
+        <!-- Section with text area, output Text with dropdown and submit button -->
+        <section class="forms-section">
+           <br>
+            <br>
+            <br>
+            <div class="container">
+                <form>
+                    <div class="row">
+
+                            <!-- Text area -->
+                            <div class="col-md-6">
+                                <h3>Input Text</h3>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="textarea" name="input_area"></textarea>
+                                </div>
+                            </div>
+                            <!-- Output text -->
+                            <div class="col-md-6">
+                                <h3>Output Text</h3>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="textarea-output" disabled>{{data}}</textarea>
+                                </div>
+                            </div>
+                            <!-- Dropdown and Submit button -->
+                            <div class="col-12 text-center">
+                                <br>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+                                </div>
+                            </div>
+
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+        <!-- Comments section -->
+        <!-- Comments section -->
+<section class="comments-section">
+  <br>
+  <br>
+  <br>
+    <!-- Comments section -->
+    <section class="comments-section">
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <h3>Comments</h3>
+        <div class="comments">
+          <div class="comments-slider">
+            <div>
+              <p>Comment 1</p>
+              <p>Author: John</p>
+            </div>
+            <div>
+              <p>Comment 2</p>
+              <p>Author: Jane</p>
+            </div>
+            <div>
+              <p>Comment 3</p>
+              <p>Author: Bob</p>
+            </div>
+            <div>
+              <p>Comment 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Footer with links like in header, Developer and copyrights -->
+        <footer class="bg-dark text-white p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>My Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contents</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Developer</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">My Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p>&copy; My Copyrights</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
