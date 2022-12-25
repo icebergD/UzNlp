@@ -3,13 +3,14 @@ import openai
 from translator import en2uz, uz2en
 openai.api_key = config.api_key
 
-def simplifier(input_text):
+def simplifier(input_text, chars_count):
+    print(chars_count)
     translated_input = uz2en(input_text)
     response = openai.Completion.create(
         model="davinci",
         prompt=f"Make it short:\n\n{translated_input}",
         temperature=0.7,
-        max_tokens=64,
+        max_tokens=1000,
         top_p=1.0,
         frequency_penalty=0.0,
         presence_penalty=0.0
